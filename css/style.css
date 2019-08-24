@@ -1,0 +1,281 @@
+.flex {
+  display: flex;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #b427ff;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-bottom: 1px dashed white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Lobster', sans-serif;
+}
+
+#section-one {
+  color: white;
+  font-size: 40px;
+  font-family: helvetica, sans-serif;
+  padding: 0 0 10px;
+}
+
+.banner {
+  height: 85vh;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+nav {
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  position: relative;
+}
+
+nav a {
+  width: 20%;
+  text-align: center;
+}
+
+nav li {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  color: white;
+  padding: 10px;
+  border: 1px dashed #b427ff;
+  transition: .5s;
+  letter-spacing: 1px;
+}
+
+nav li:hover {
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#facebook {
+  width: 65px;
+  height: 65px;
+  padding: 5px;
+  border-radius: 100%;
+  transition: .5s;
+  position: center;
+}
+
+#facebook:hover {
+  border: 1px dashed white;
+  transition: .5s;
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.logo img {
+  height: 70vh;
+}
+
+.icons {
+  width: 75%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.icon {
+  z-index: -1;
+  margin: -5vh;
+  width: 30%;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 40%;
+}
+
+.icon h1 {
+  position: relative;
+  top: -5vh;
+  font-family: 'Lobster', sans-serif;
+}
+
+.back-to-top {
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  text-align: center;
+  width: 150px;
+  border: 1px dashed #fff;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Lobster', sans-serif;
+  letter-spacing: 1px;
+}
+
+.back-to-top:hover {
+  color: #5d0071;
+  border-color: #5d0071;
+}
+
+.carousel {
+  width: 50%;
+  max-height: 80vh;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.carousel div {
+  width: 100%;
+  background: #d993ff;
+  padding: 1vh;
+  border-radius: 5px;
+}
+
+.carousel img {
+  max-height: 60vh;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.text {
+  height: 25vh;
+  text-align: center;
+  padding: 10px 10px 20px;
+  color: purple;
+  font-size: 16px;
+}
+
+.text h1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.text p {
+  height: 50%;
+  overflow: auto;
+  flex-grow: 1;
+}
+
+.story {
+  width: 65%;
+  margin: 0 auto;
+  height: 100%;
+  background: #d993ff;
+  padding: 30px;;
+  border-radius: 5px;
+  color: purple;
+  font-size: 18px;
+  /* border: 1px solid white; */
+}
+
+.story h1, .title {
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 1px white;
+}
+
+.title {
+  font-family: 'Lobster', sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 2px 1px #5d0071;
+}
+
+.story p {
+  margin: 10px;
+  text-align: justify;
+  line-height: 22px;
+}
+
+.story img {
+  border: 5px solid white;
+  margin: 0 10px;
+}
+
+#purplehouse {
+  float: left;
+  border-radius: 100%;
+}
+
+#eva2 {
+  float: right;
+  border-radius: 100%;
+}
+
+#eva {
+  float: left;
+  margin-top: 15px;
+}
+
+.aboutEva {
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.sewing-tip {
+  height: 80vh;
+
+}
+
+.sewing-tip img {
+  height: 63%;
+}
+
+.sewing-tip .text {
+  margin: 10px auto 0;
+  position: relative;
+  width: 90%;
+}
+
+.sewing-tip .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.sewing-tip h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.text ul {
+  list-style-type: circle;
+  text-align: left;
+  width: 95%;
+  font-size: 16px;
+  line-height: 18px;
+}
