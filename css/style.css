@@ -48,10 +48,12 @@ nav {
 }
 
 nav ul {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 5px;
   position: relative;
+  width: 90%;
+  margin: 0 auto;
 }
 
 nav a {
@@ -77,22 +79,22 @@ nav li:hover {
   transition: .5s;
 }
 
-#facebook {
+.facebook {
   width: 65px;
   height: 65px;
   padding: 5px;
   border-radius: 100%;
   transition: .5s;
   position: center;
+  flex-grow: 1;
 }
 
-#facebook:hover {
-  border: 1px dashed white;
-  transition: .5s;
+.facebook:hover {
+  transform: scale(1.25, 1.25)
 }
 
 .logo {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .logo img {
@@ -278,4 +280,30 @@ nav li:hover {
   width: 95%;
   font-size: 16px;
   line-height: 18px;
+}
+
+.bottom {
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}
+
+#telephone {
+  font-size: 16px;
+  padding: 0 2px;
+}
+
+#email {
+  display: block;
+  padding: 0 2px 2px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.phone:hover, #email:hover {
+  color: purple;
 }
