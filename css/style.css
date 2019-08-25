@@ -47,6 +47,10 @@ nav {
   align-items: center;
 }
 
+nav h1 {
+  display: none;
+}
+
 nav ul {
   justify-content: space-between;
   align-items: center;
@@ -67,8 +71,6 @@ nav li {
   font-weight: bold;
   display: block;
   color: white;
-  padding: 10px;
-  border: 1px dashed #b427ff;
   transition: .5s;
   letter-spacing: 1px;
 }
@@ -306,4 +308,39 @@ nav li:hover {
 
 .phone:hover, #email:hover {
   color: purple;
+}
+
+@media screen and (max-width: 750px) {
+
+  nav {
+    width: 100%;
+
+  }
+
+  nav h1 {
+    display: inherit;
+    font-size: 40px;;
+    position: absolute;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav a {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: left;
+    margin: 5px 0 5px 70px;
+    /* display: none; */
+  }
+
+  .logo img {
+    position: center;
+  }
+
 }

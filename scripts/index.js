@@ -22,4 +22,13 @@ autoplaySpeed: 5000,
 adaptiveHeight: false,
 });
 
+$('.hamburger').on('click', function() {
+	$('nav li').slideToggle();
+});
+
+var screenWidth = $(window).width();
+if (screenWidth < 750) {
+	$('.navFB').hide();
+}
+
 });
