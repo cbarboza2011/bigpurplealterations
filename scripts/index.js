@@ -8,7 +8,7 @@ $(document).ready(function() {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
-	adaptiveHeight: true,
+	adaptiveHeight: false,
 });
 
 $('.sewing-tips').slick({
@@ -23,12 +23,13 @@ adaptiveHeight: false,
 });
 
 $('.hamburger').on('click', function() {
-	$('nav li').slideToggle();
+	$('nav a').not('#navFB').slideToggle();
+	$('.menu').toggle();
 });
 
 var screenWidth = $(window).width();
 if (screenWidth < 750) {
-	$('.navFB').hide();
-}
+	$('.back-to-top').text('↑ Top');
+} else {}
 
 });

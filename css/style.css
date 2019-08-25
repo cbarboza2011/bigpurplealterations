@@ -14,25 +14,19 @@ body {
 .section {
   width: 100%;
   height: 100vh;
-  display: block;
-  margin: 0 auto;
+  margin: 10px 0;
   padding: 10px 0;
   border-bottom: 1px dashed white;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color: #fff;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
   font-family: 'Lobster', sans-serif;
-}
-
-#section-one {
-  color: white;
-  font-size: 40px;
-  font-family: helvetica, sans-serif;
-  padding: 0 0 10px;
 }
 
 .banner {
@@ -149,28 +143,34 @@ nav li:hover {
 
 .carousel {
   width: 50%;
-  max-height: 80vh;
+  height: 80%;
   margin: 0 auto;
   border-radius: 5px;
 }
 
-.carousel div {
+.carousel-slide {
   width: 100%;
   background: #d993ff;
-  padding: 1vh;
   border-radius: 5px;
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
 }
 
-.carousel img {
-  max-height: 60vh;
+.carousel-slide img {
+  max-height: 75%;
+  max-width: 90%;
   margin: 0 auto;
   border-radius: 10px;
+  flex-grow: 1;
 }
 
 .text {
-  height: 25vh;
+  width: 90%;
   text-align: center;
-  padding: 10px 10px 20px;
+  justify-content: center;
+  margin: 10px auto 0;
   color: purple;
   font-size: 16px;
 }
@@ -179,12 +179,12 @@ nav li:hover {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: bold;
+  padding-bottom: 5px;
 }
 
-.text p {
-  height: 50%;
+.text p, .text ul{
   overflow: auto;
-  flex-grow: 1;
+  height: 60px;
 }
 
 .story {
@@ -196,7 +196,6 @@ nav li:hover {
   border-radius: 5px;
   color: purple;
   font-size: 18px;
-  /* border: 1px solid white; */
 }
 
 .story h1, .title {
@@ -247,43 +246,6 @@ nav li:hover {
   overflow-y: scroll;
 }
 
-.sewing-tip {
-  height: 80vh;
-
-}
-
-.sewing-tip img {
-  height: 63%;
-}
-
-.sewing-tip .text {
-  margin: 10px auto 0;
-  position: relative;
-  width: 90%;
-}
-
-.sewing-tip .text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.sewing-tip h1 {
-  margin-bottom: 10px;
-  font-size: 24px;
-}
-
-.text ul {
-  list-style-type: circle;
-  text-align: left;
-  width: 95%;
-  font-size: 16px;
-  line-height: 18px;
-}
-
 .bottom {
   padding: 20px;
   justify-content: space-between;
@@ -312,35 +274,73 @@ nav li:hover {
 
 @media screen and (max-width: 750px) {
 
-  nav {
-    width: 100%;
+  body {
+    overflow-x: hidden;
+  }
 
+  .section {
+    border: 0;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .back-to-top {
+    padding: 10px;
+    position: inherit;
+    margin: 10px auto;
+    width: 70px;
   }
 
   nav h1 {
     display: inherit;
-    font-size: 40px;;
+    font-size: 30px;
     position: absolute;
-    padding: 10px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px dashed #5d0071;
+    border-radius: 5px;
+    color: #5d0071;
   }
 
   nav ul {
     flex-direction: column;
     width: 100%;
+    position: relative;
+    left: 60px;
   }
 
   nav a {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 10px 0;
     font-size: 12px;
     text-align: left;
-    margin: 5px 0 5px 70px;
-    /* display: none; */
+    display: none;
   }
 
-  .logo img {
-    position: center;
+  .logo {
+    margin: 15vh auto 5vh;
+  }
+
+  .icons {
+    margin-top: 0;
+    justify-content: space-between;
+  }
+
+  .icon img{
+    margin-bottom: 20px;
+  }
+
+  .carousel {
+    width: 88%;
+  }
+
+  .carousel div {
+    background: inherit;
+  }
+
+  .carousel img {
+    max-width: 90%;
   }
 
 }
