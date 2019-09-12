@@ -184,8 +184,8 @@ nav li:hover {
 }
 
 .text p, .text ul{
-  overflow-y: scroll;
-  /* height: 75%; */
+  overflow: auto;
+  height: 120px;
 }
 
 .story {
