@@ -185,7 +185,7 @@ nav li:hover {
 
 .text p, .text ul{
   overflow: auto;
-  height: 120px;
+  height: 100px;
 }
 
 .story {
@@ -241,6 +241,17 @@ nav li:hover {
 #eva {
   float: left;
   margin-top: 15px;
+}
+
+#eva4 {
+  float: left;
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+#mailbox {
+  float: right;
+  margin-right: 5px;
 }
 
 .story-scroll {
