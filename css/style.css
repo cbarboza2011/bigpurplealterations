@@ -353,6 +353,10 @@ nav li:hover {
 
   }
 
+  .banner {
+    height: auto;
+  }
+
   .logo {
     margin: 15vh auto 5vh;
   }
