@@ -376,6 +376,10 @@ nav li:hover {
     width: 100%;
   }
 
+  #section-one {
+    margin-bottom: 70px;
+  }
+
   #section-two, #section-five {
     height: calc(100vh + 100px)
   }
