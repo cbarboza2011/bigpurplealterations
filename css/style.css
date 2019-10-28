@@ -302,6 +302,7 @@ nav li:hover {
     flex-direction: column;
     margin: 20px auto;
     font-size: 14px;
+    height: auto;
   }
 
   .back-to-top {
