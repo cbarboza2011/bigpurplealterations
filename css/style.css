@@ -406,13 +406,27 @@ nav li:hover {
     font-size: 22px;
   }
 
-  .story h1{
+  .story h1 {
     font-size: 20px;
   }
 
   .story p, .text p {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .scroller {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 100%;
+    font-size: 5vh;
+    padding:  0 .2vh .4vh;
+    color: white;
+    background: rgba(255,255,255,0.3);
+    position: sticky;
+    bottom: 3vh;
+    margin-left: 45%;
+    box-shadow: 2px 2px 5px #888;
   }
 
 }

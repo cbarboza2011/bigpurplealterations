@@ -30,6 +30,18 @@ $('.hamburger').on('click', function() {
 var screenWidth = $(window).width();
 if (screenWidth < 750) {
 	$('.back-to-top').text('↑ Top');
+	// add a scrolling icon to scrollable text on touch
+	var $scrollDiv = $('<div class="scroller">⏷</div>');
+	var $scrollable = $('.story-scroll');
+	$scrollable.css('position', 'relative').append($scrollDiv);
+	var $scroller = $('.scroller');
+	$scroller.hide();
+	$scrollable.mousedown(function() {
+		$scroller.show();
+		$(this).mouseup(function() {
+			$scroller.hide();
+		});
+	});
 } else {}
 
 });
