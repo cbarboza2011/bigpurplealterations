@@ -260,6 +260,7 @@ nav li:hover {
 .story-scroll {
   height: 90%;
   overflow-y: auto;
+  position: relative;
 }
 
 .bottom {
