@@ -421,8 +421,8 @@ nav li:hover {
   }
 
   .scroller {
-    width: 5vh;
-    height: 5vh;
+    width: 6vh;
+    height: 6vh;
     border-radius: 100%;
     font-size: 4vh;
     padding:  .5vh .4vh;
