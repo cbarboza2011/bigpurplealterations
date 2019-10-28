@@ -424,7 +424,7 @@ nav li:hover {
     height: 5vh;
     border-radius: 100%;
     font-size: 5vh;
-    padding:  0 .2vh .4vh;
+    /* padding:  0 .2vh .4vh; */
     color: white;
     background: rgba(255,255,255,0.3);
     position: -webkit-sticky;

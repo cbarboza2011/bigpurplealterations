@@ -30,6 +30,7 @@ $('.hamburger').on('click', function() {
 var screenWidth = $(window).width();
 if (screenWidth < 750) {
 	$('.back-to-top').text('↑ Top');
+	$('.text').css('height','max-content');
 	// add a scrolling icon to scrollable text on touch
 	var $scrollDiv = $('<div class="scroller">⏷</div>');
 	var $scrollable = $('.story-scroll');
