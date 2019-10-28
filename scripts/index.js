@@ -35,13 +35,16 @@ if (screenWidth < 750) {
 	var $scrollable = $('.story-scroll');
 	$scrollable.css('position', 'relative').append($scrollDiv);
 	var $scroller = $('.scroller');
-	$scroller.hide();
-	$scrollable.mousedown(function() {
-		$scroller.show();
-		$(this).mouseup(function() {
+	$scrollable.scroll(function() {
+		var $scrollHeight = $(this)[0].scrollTop;
+		var $height = $(this)[0].scrollHeight - $(this)[0].clientHeight;
+		if ($scrollHeight === $height) {
 			$scroller.hide();
-		});
+		} else {
+			$scroller.show();
+		}
 	});
+
 } else {}
 
 });
