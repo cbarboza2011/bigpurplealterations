@@ -298,7 +298,6 @@ nav li:hover {
     display: flex;
     flex-direction: column;
     margin: 20px auto;
-    height: max-content;
   }
 
   .back-to-top {
@@ -382,7 +381,7 @@ nav li:hover {
     max-height: 85%;
   }
 
-  .story-scroll img {
+  .story-scroll img, #purplehouse {
     width: 30%;
   }
 
