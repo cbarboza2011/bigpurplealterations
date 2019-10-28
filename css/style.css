@@ -135,6 +135,7 @@ nav li:hover {
   color: #fff;
   font-family: 'Lobster', sans-serif;
   letter-spacing: 1px;
+  margin: 10px;
 }
 
 .back-to-top:hover {
