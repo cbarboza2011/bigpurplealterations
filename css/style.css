@@ -395,7 +395,7 @@ nav li:hover {
 
   .story-scroll {
     max-height: 85vh;
-    box-shadow: 0 -10px 10px -8px #888 inset;
+    box-shadow: 0 -10px 8px -4px #888 inset;
   }
 
   .story-scroll img, #purplehouse, #eva, #mailbox, #eva4 {
