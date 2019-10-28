@@ -424,14 +424,15 @@ nav li:hover {
     width: 6vh;
     height: 6vh;
     border-radius: 100%;
-    font-size: 4vh;
-    line-height: 6vh;
+    font-size: 6vh;
+    line-height: 5vh;
     text-align: center;
     color: white;
     background: rgba(255,255,255,0.3);
     position: -webkit-sticky;
     position: sticky;
     bottom: 3vh;
+    padding: .1vh;
     margin-left: 45%;
     box-shadow: 2px 2px 5px #888;
   }
