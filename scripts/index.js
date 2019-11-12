@@ -32,8 +32,9 @@ if (screenWidth < 750) {
 	$('.back-to-top').text('↑ Top');
 	// add a scrolling icon to scrollable text on touch
 	var $scrollable = $('.story-scroll');
-	var $scroller = $('.scroller');
+	// var $scroller = $(this).closest('.scroller');
 	$scrollable.scroll(function() {
+		var $scroller = $(this).find('.scroller');
 		var $scrollHeight = $(this)[0].scrollTop;
 		var $height = $(this)[0].scrollHeight - $(this)[0].clientHeight;
 		if ($scrollHeight === $height) {
@@ -42,7 +43,6 @@ if (screenWidth < 750) {
 			$scroller.show();
 		}
 	});
-
 } else {
 	$('.scroller').hide();
 }
